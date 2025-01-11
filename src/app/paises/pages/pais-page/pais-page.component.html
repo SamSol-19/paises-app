@@ -16,5 +16,17 @@
             <h3>Bandera</h3>
             <img [src]="pais.flags.svg" [alt]="pais.name.common" class="img-thumbnail">
         </div>
+        <div class="col-8">
+            <h3>Información</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <b>Capital:</b> {{pais.capital}}  
+                </li>
+                <li class="list-group-item">
+                    <b>Subregión:</b> {{pais.subregion}}
+                </li>
+                <li class="list-group-item">
+                    <b>Área:</b> {{pais.area | number}} km²
+            </ul>                  
     </div>
 </div>
